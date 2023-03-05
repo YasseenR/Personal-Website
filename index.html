@@ -28,13 +28,18 @@
     <div style="text-align: center; font-size: 60px; font-family: Nunito; color:white">
         Yasseen Rouni
     </div>
-    <div style="text-align:center; font-size: 30px; font-family: Nunito; color:#353535" >
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-            <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-            <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
-            <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
-         </svg>
-         Computer Science Student
+    <div  class="text-box"style="text-align:center; font-size: 30px; font-family: Nunito; color:#353535;" >
+        
+         
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-school" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M22 9l-10 -4l-10 4l10 4l10 -4v6"></path>
+                <path d="M6 10.6v5.4a6 3 0 0 0 12 0v-5.4"></path>
+             </svg> 
+             <span class="auto-input"></span>
+            
+
+         
     </div>
     <div style="text-align:center; color:white">
         <br> <br>
@@ -65,11 +70,11 @@
         <div style="text-align: center; font-size: 18px; font-family:Nunito; color:orangered">
             About Me
         </div>
-        <div style="text-align: center; font-size: 30px; font-family: Nunito; font-style: italic; color:beige">
+        <div class ="hidden"style="text-align: center; font-size: 30px; font-family: Nunito; font-style: italic; color:beige">
             Yasseen Rouni<hr>
         </div>
         <br>
-        <div style="text-align: center; font-size: 20px; font-family: Nunito; color:beige; max-width: 50%; margin: 0 auto">
+        <div class="hidden"style="text-align: center; font-size: 20px; font-family: Nunito; color:beige; max-width: 50%; margin: 0 auto">
             I am a current computer science undergraduate student at Temple University. I am seeking a software 
             engineer position in a company of any size. I am heavily interested in the health field and innovations 
             possible with the combination of software engineers and medical professionals/researchers.
@@ -441,7 +446,14 @@
 
     <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="main.js"></script>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["Computer Science Student", "Web Developer", "UI Designer"],
+            typeSpeed: 100,
+            backSpeed: 100,
+            loop: true
+        })
+    </script>
 </body>
 </html>
